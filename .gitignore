@@ -1,3 +1,11 @@
+###> bastardbookingsystem/local-development ###
+.DS_Store
+.idea/
+bastardbookingsystem.crt
+bastardbookingsystem.key
+public/uploads/band/*
+!public/uploads/band/.gitkeep
+###< bastardbookingsystem/local-development ###
 
 ###> symfony/framework-bundle ###
 /.env.local

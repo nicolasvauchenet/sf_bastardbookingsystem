@@ -1,0 +1,63 @@
+h1,
+h2,
+h3 {
+  font-family: $font-secondary;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $third;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: $primary;
+
+  &:has(.app-icon) {
+    @include displayGrid(1fr, 1.5rem);
+
+    @include respondTo(md) {
+      @include displayGrid(1fr 2fr, 1.5rem);
+      align-items: center;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+
+      .app-icon {
+        transition: none;
+        transform: translateY(-0.25rem);
+      }
+    }
+  }
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  text-align: left;
+  color: $primary;
+
+  &:has(.app-icon) {
+    @include displayFlex(null, center, 0.5rem);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $third;
+  transition: all 0.4s;
+
+  @include respondTo(xs) {
+    color: $secondary;
+  }
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+strong {
+  font-weight: bold;
+}

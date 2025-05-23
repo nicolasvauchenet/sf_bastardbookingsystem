@@ -1,0 +1,47 @@
+.app-button {
+  @include displayFlex(center, center);
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primary;
+  background-color: $third;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba($black, 0.5);
+  transition: all 0.4s;
+  cursor: pointer;
+
+  &.outline {
+    color: $primary;
+    background-color: transparent;
+    box-shadow: none;
+
+    &:hover {
+      color: $secondary;
+      background-color: transparent;
+    }
+  }
+
+  &.cta {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: $white;
+    background-color: $primary;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $secondary;
+  }
+
+  small {
+    margin-top: 0.25rem;
+    width: 100%;
+  }
+}

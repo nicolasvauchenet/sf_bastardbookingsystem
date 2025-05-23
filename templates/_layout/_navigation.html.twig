@@ -1,0 +1,91 @@
+<nav class="app-navigation">
+    <div class="app-dropdownmenu">
+        <a href="#" onclick="return false;">
+            {{ ux_icon('el:group', {'class': 'app-icon medium'}) }}
+            Groupes
+        </a>
+
+        <div class="dropdown-content left">
+            <div class="dropdown-item">
+                <img src="{{ asset('img/sitecover.webp') }}" alt="Groupes"/>
+            </div>
+            <div class="dropdown-item">
+                <div class="app-grid two">
+                    <div class="grid-item">
+                        <strong>Gérer les Groupes</strong>
+                        <a href="#"
+                           class="{% if app.request.get('_route') == 'app_front_office_label_about' %}active{% endif %}">
+                            <img src="{{ asset('img/logo_small.png') }}" class="bullet" alt="BSS"/>
+                            Tous les Groupes
+                        </a>
+                        <a href="#"
+                           class="{% if app.request.get('_route') == 'app_front_office_label_about' %}active{% endif %}">
+                            <img src="{{ asset('img/logo_small.png') }}" class="bullet" alt="BSS"/>
+                            Nouveau Groupe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-dropdownmenu">
+        <a href="#" onclick="return false;">
+            {{ ux_icon('el:group', {'class': 'app-icon medium'}) }}
+            Contacts
+        </a>
+
+        <div class="dropdown-content left">
+            <div class="dropdown-item">
+                <img src="{{ asset('img/sitecover.webp') }}" alt="Contacts"/>
+            </div>
+            <div class="dropdown-item">
+                <div class="app-grid two">
+                    <div class="grid-item">
+                        <strong>Gérer les Contacts</strong>
+                        <a href="#"
+                           class="{% if app.request.get('_route') == 'app_front_office_label_about' %}active{% endif %}">
+                            <img src="{{ asset('img/logo_small.png') }}" class="bullet" alt="BSS"/>
+                            Tous les Contacts
+                        </a>
+                        <a href="#"
+                           class="{% if app.request.get('_route') == 'app_front_office_label_about' %}active{% endif %}">
+                            <img src="{{ asset('img/logo_small.png') }}" class="bullet" alt="BSS"/>
+                            Nouveau Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-dropdownmenu">
+        <a href="#" onclick="return false;">
+            {{ ux_icon('el:group', {'class': 'app-icon medium'}) }}
+            Lieux
+        </a>
+
+        <div class="dropdown-content left">
+            <div class="dropdown-item">
+                <img src="{{ asset('img/bandcover.webp') }}" alt="Lieux"/>
+            </div>
+            <div class="dropdown-item">
+                <div class="app-grid two">
+                    <div class="grid-item">
+                        <strong>Gérer les Lieux</strong>
+                        <a href="#"
+                           class="{% if app.request.get('_route') == 'app_front_office_label_about' %}active{% endif %}">
+                            <img src="{{ asset('img/logo_small.png') }}" class="bullet" alt="BSS"/>
+                            Tous les Lieux
+                        </a>
+                        <a href="#"
+                           class="{% if app.request.get('_route') == 'app_front_office_label_about' %}active{% endif %}">
+                            <img src="{{ asset('img/logo_small.png') }}" class="bullet" alt="BSS"/>
+                            Nouveau Lieu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

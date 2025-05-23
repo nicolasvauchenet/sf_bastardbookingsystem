@@ -1,0 +1,93 @@
+.app-footer {
+  padding: 1.5rem 1rem;
+  margin-bottom: 4.25rem;
+  color: $white;
+  background-color: $primary;
+  border-top: 0.5rem solid $third;
+
+  @include respondTo(md) {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: $third;
+
+    &:has(.app-icon) {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+
+      a {
+        color: $third;
+
+        &:hover {
+          color: $secondary;
+        }
+
+        .app-icon {
+          transform: translateY(-2px) !important;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $third;
+    }
+
+    &.active {
+      font-weight: bold;
+      color: $third;
+    }
+  }
+
+  .footer-about {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+
+  .footer-links {
+    ul {
+      li {
+        line-height: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer-social {
+    .app-socials {
+      @include respondTo(md) {
+        height: calc(100% - 3.5rem);
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer-contact {
+    ul {
+      li {
+        line-height: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer-credits {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+}

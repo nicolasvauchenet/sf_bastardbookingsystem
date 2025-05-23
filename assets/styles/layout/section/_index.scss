@@ -1,0 +1,36 @@
+.app-section {
+  padding: 3rem 1rem;
+  margin: 0 0.5rem 3rem;
+  background-color: $white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba($black, 0.5);
+
+  @include respondTo(md) {
+    padding: 3rem;
+    margin: 0 auto 3rem;
+    width: 1200px;
+  }
+
+  &:has(.app-filters) {
+    /*position: sticky;
+    top: 4rem;*/
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+
+    .app-text {
+      width: calc(100% - 2rem);
+      background-color: $third;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      box-shadow: 0 0.25rem 0.5rem rgba($black, 0.5);
+
+      @include respondTo(md) {
+        width: calc(100% - 3rem);
+      }
+    }
+  }
+
+  @import "cover";
+  @import "post-figure";
+}
